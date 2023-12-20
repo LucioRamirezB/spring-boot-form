@@ -5,7 +5,7 @@
 ## Versión de SpringBoot: 3.1.5
 
 ## Los campos son validados con SpringBoot
-*** *** Las anotaciones que se usaron son los siguientes:
+*** Las anotaciones que se usaron son los siguientes: ***
 - @NotBlank
 - @Requerido
 - @Size
@@ -22,7 +22,7 @@
 
 ## Para mostrar los datos en los archivos HTML se usó thimeleaf. Para más información, consulte la siguiente liga hthp://www.thimeleaf.org
 
-## También el proyecto cuenta un archivo messages.properties para el manejo de los mensajes de validación del formulario
+## También el proyecto cuenta con un archivo messages.properties para el manejo de los mensajes de validación del formulario
 
 ## Para los estilos de los formularios se usó Bootstrap 4.4
 
