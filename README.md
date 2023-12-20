@@ -5,7 +5,7 @@
 ## Versión de SpringBoot: 3.1.5
 
 ## Los campos son validados con SpringBoot
-*** Las anotaciones que se usaron son los siguientes: ***
+***Las anotaciones que se usaron son los siguientes:***
 - @NotBlank
 - @Requerido
 - @Size
