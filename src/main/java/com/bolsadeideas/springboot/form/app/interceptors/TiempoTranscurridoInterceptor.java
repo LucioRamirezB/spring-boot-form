@@ -22,6 +22,9 @@ public class TiempoTranscurridoInterceptor implements HandlerInterceptor{
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
+		if(request.getMethod().equalsIgnoreCase("post")) {
+			return true;
+		}
 		
 		if(handler instanceof HandlerMethod ) {
 			HandlerMethod metodo =  (HandlerMethod) handler;
@@ -36,6 +39,8 @@ public class TiempoTranscurridoInterceptor implements HandlerInterceptor{
 		Random random = new Random();
 		Integer demora = random.nextInt(500);
 		Thread.sleep(demora);
+		//Lo  siguiente es en caso de validación y se tiene que redirigir a otra página. En este caso return debe ser False
+		//response.sendRedirect(request.getContextPath().concat("/404"));
 		
 		return true;
 	}
@@ -43,6 +48,10 @@ public class TiempoTranscurridoInterceptor implements HandlerInterceptor{
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
+		if(request.getMethod().equalsIgnoreCase("post")) {
+			return;
+		}
+		
 		long tiempoFin = System.currentTimeMillis();
 		long tiempoInicio = (Long) request.getAttribute("tiempoInicio");
 		long tiempoTranscurrido = tiempoFin - tiempoInicio;
