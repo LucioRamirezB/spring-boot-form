@@ -20,7 +20,7 @@
 
 ## Se usó tambien inyección de dependencias
 
-## Para mostrar los datos en los archivos HTML se usó thimeleaf. Para más información, consulte la siguiente liga hthp://www.thimeleaf.org
+## Para mostrar los datos en los archivos HTML se usó thymeleaf. Para más información, consulte la siguiente liga [hthp://www.thymeleaf.org](https://www.thymeleaf.org/)
 
 ## También el proyecto cuenta con un archivo messages.properties para el manejo de los mensajes de validación del formulario
 
